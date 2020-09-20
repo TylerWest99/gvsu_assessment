@@ -17,8 +17,8 @@ const { Builder, By, Key, util } = require("selenium-webdriver");
 async function main(){
     let driver = await new Builder().forBrowser("chrome").build();
     //gvsu pw and username
-    let gvUsername = "";
-    let gvPw = "";
+    let gvUsername = "westty";
+    let gvPw = "tylerw51Rebel5199";
     if(gvPw === "" && gvUsername === ""){
         let promise1 = new Promise((resolve) => {
             rl.question('What is your GV username ', name => { resolve(name) })
@@ -76,7 +76,7 @@ async function main(){
     //be at gvsu campus today
     let campusBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(7) > label > select > option:nth-child(2)"));
     let campusBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(7) > label > select > option:nth-child(3)"));
-    campusBoxNo.click();
+    campusBoxYes.click();
     //clinical or internship
     let internBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(8) > label > select > option:nth-child(2)"));
     let internBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(8) > label > select > option:nth-child(3)"));

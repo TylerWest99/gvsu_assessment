@@ -73,17 +73,20 @@ async function main(){
     let virusExposureBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(4) > label > select > option:nth-child(2)"));
     let virusExposureBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(4) > label > select > option:nth-child(3)"));
     virusExposureBoxNo.click();
-    //be at gvsu campus today 
-    let campusBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(6) > label > select > option:nth-child(2)"));
-    let campusBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(6) > label > select > option:nth-child(3)"));
+    //be at gvsu campus today
+    let campusBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(7) > label > select > option:nth-child(2)"));
+    let campusBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(7) > label > select > option:nth-child(3)"));
     campusBoxYes.click();
     //clinical or internship
-    let internBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(7) > label > select > option:nth-child(2)"));
-    let internBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(7) > label > select > option:nth-child(3)"));
+    let internBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(8) > label > select > option:nth-child(2)"));
+    let internBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(8) > label > select > option:nth-child(3)"));
     internBoxNo.click();
+    //isolation
+    let isolationBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(9) > label > select > option:nth-child(4)"))
+    isolationBoxNo.click();
     //outside michigan
-    let michBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(8) > label > select > option:nth-child(2)"));
-    let michBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(8) > label > select > option:nth-child(3)"));
+    let michBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(10) > label > select > option:nth-child(2)"));
+    let michBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(10) > label > select > option:nth-child(3)"));
     michBoxNo.click();
 
     //yes or no questions
@@ -91,44 +94,44 @@ async function main(){
     //let noseBoxYes = await driver.findElement(By.css(""));
     //let noseBoxNo = await driver.findElement(By.css(""));
     //chills
-    let chillBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(11) > span > label:nth-child(1) > input[type=radio]"));
-    let chillBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(11) > span > label:nth-child(2) > input[type=radio]"))
+    let chillBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(13) > span > label:nth-child(1) > input[type=radio]"));
+    let chillBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(13) > span > label:nth-child(2) > input[type=radio]"))
     chillBoxNo.click();
     //runny nose
-    let noseBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(12) > span > label:nth-child(1) > input[type=radio]"));
-    let noseBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(12) > span > label:nth-child(2) > input[type=radio]"));
+    let noseBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(14) > span > label:nth-child(1) > input[type=radio]"));
+    let noseBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(14) > span > label:nth-child(2) > input[type=radio]"));
     noseBoxNo.click();
     //cough
-    let coughBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(13) > span > label:nth-child(1) > input[type=radio]"));
-    let coughBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(13) > span > label:nth-child(2) > input[type=radio]"));
+    let coughBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(15) > span > label:nth-child(1) > input[type=radio]"));
+    let coughBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(15) > span > label:nth-child(2) > input[type=radio]"));
     coughBoxNo.click();
     //nausea or diarrhea
-    let sickBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(14) > span > label:nth-child(1) > input[type=radio]"));
-    let sickBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(14) > span > label:nth-child(2) > input[type=radio]"));
+    let sickBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(16) > span > label:nth-child(1) > input[type=radio]"));
+    let sickBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(16) > span > label:nth-child(2) > input[type=radio]"));
     sickBoxNo.click();
     //tired
-    let tiredBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(15) > span > label:nth-child(1) > input[type=radio]"));
-    let tiredBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(15) > span > label:nth-child(2) > input[type=radio]"));
+    let tiredBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(17) > span > label:nth-child(1) > input[type=radio]"));
+    let tiredBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(17) > span > label:nth-child(2) > input[type=radio]"));
     tiredBoxNo.click();
     //fever
-    let feverBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(16) > span > label:nth-child(1) > input[type=radio]"));
-    let feverBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(16) > span > label:nth-child(2) > input[type=radio]"));
+    let feverBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(18) > span > label:nth-child(1) > input[type=radio]"));
+    let feverBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(18) > span > label:nth-child(2) > input[type=radio]"));
     feverBoxNo.click();
     //loss of taste or smell
-    let lossBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(17) > span > label:nth-child(1) > input[type=radio]"));
-    let lossBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(17) > span > label:nth-child(2) > input[type=radio]"));
+    let lossBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(19) > span > label:nth-child(1) > input[type=radio]"));
+    let lossBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(19) > span > label:nth-child(2) > input[type=radio]"));
     lossBoxNo.click();
     //muscle aches
-    let musBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(18) > span > label:nth-child(1) > input[type=radio]"));
-    let musBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(18) > span > label:nth-child(2) > input[type=radio]"));
+    let musBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(20) > span > label:nth-child(1) > input[type=radio]"));
+    let musBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(20) > span > label:nth-child(2) > input[type=radio]"));
     musBoxNo.click();
     //breath shortness
-    let breathBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(19) > span > label:nth-child(1) > input[type=radio]"));
-    let breathBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(19) > span > label:nth-child(2) > input[type=radio]"));
+    let breathBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(21) > span > label:nth-child(1) > input[type=radio]"));
+    let breathBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(21) > span > label:nth-child(2) > input[type=radio]"));
     breathBoxNo.click();
     //sore throat
-    let throatBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(20) > span > label:nth-child(1) > input[type=radio]"));
-    let throatBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(20) > span > label:nth-child(2) > input[type=radio]"));
+    let throatBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(22) > span > label:nth-child(1) > input[type=radio]"));
+    let throatBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(22) > span > label:nth-child(2) > input[type=radio]"));
     throatBoxNo.click();
 
     //confirmation box
