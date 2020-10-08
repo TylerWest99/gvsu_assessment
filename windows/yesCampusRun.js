@@ -60,23 +60,24 @@ async function main(){
         url = await driver.getCurrentUrl();
     }
 
-    //for all questions below there are two objects per question with same name other than the ending
+     //for all questions below there are two objects per question with same name other than the ending
     //type Yes or No on it to select it that way
 
     //actual assessment page
     //selection questions
     //tested in last thirty days (NO)
-    let testBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(2) > label > select > option:nth-child(2)"));
-    let testBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(2) > label > select > option:nth-child(3)"));
-    testBoxNo.click();
+    //let testBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(2) > label > select > option:nth-child(2)"));
+    //let testBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(2) > label > select > option:nth-child(3)"));
+    //testBoxNo.click();
     //exposure to virus
-    let virusExposureBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(4) > label > select > option:nth-child(2)"));
-    let virusExposureBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(4) > label > select > option:nth-child(3)"));
-    virusExposureBoxNo.click();
+    //let virusExposureBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(4) > label > select > option:nth-child(2)"));
+    //let virusExposureBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(4) > label > select > option:nth-child(3)"));
+    //virusExposureBoxNo.click();
     //be at gvsu campus today
-    let campusBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(7) > label > select > option:nth-child(2)"));
-    let campusBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(7) > label > select > option:nth-child(3)"));
+    let campusBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(8) > label > select > option:nth-child(2)"));
+    let campusBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(8) > label > select > option:nth-child(3)"));
     campusBoxYes.click();
+    /*
     //clinical or internship
     let internBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(8) > label > select > option:nth-child(2)"));
     let internBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(8) > label > select > option:nth-child(3)"));
@@ -133,6 +134,7 @@ async function main(){
     let throatBoxYes = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(22) > span > label:nth-child(1) > input[type=radio]"));
     let throatBoxNo = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(4) > p:nth-child(22) > span > label:nth-child(2) > input[type=radio]"));
     throatBoxNo.click();
+    */
 
     //confirmation box
     let confirmationBox = await driver.findElement(By.css("#cms-content > form > fieldset:nth-child(5) > p:nth-child(1) > label > input[type=checkbox]"));
