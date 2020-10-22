@@ -1,14 +1,14 @@
-Hello this is a automated gvsu self assessment program. It will answer no to all questions on your behald please use this tool responsibly.
-Do not lie only run these scripts if they apply to you.
+Hello this is a automated gvsu self assessment program. It will answer the survey the same as when you last took it except for it may change the
+box about if you are going into campus or not that day depending on which script you use.
 
-To install first go online and install NodeJs 
-Then
+Setup
+To start download nodejs from online and also download the selenium webdriver both are required.
 
-On Windows run the setupScript once, then you are all set
+Once they are both installed on your computer you can make an executable script (bash for Mac) (Bat for Windows) that will move into that 
+directory and launch the script.
 
-On Mac make you must first chmod 777 in the terminal on permissions.sh and then run that script then just run either 
-yesCampus.command or noCampus.command depending non if you are going into campus that day or not
+The scripts default to requiring you to input your GV password and GV username but you can edit the scripts to use your password and username.
+To do this open one or both of the files and change the GV password and GV username variables and place your specific credientials in between
+the "" for bot. 
 
-if on either platform you want to skip the input of a GV username and password open both of the .js files in notepad,
-these files are saved in the folder for your operating system and on the lines starting with GV username and GV password put your username and password 
-in between the parenthesis
+Then if you are on Windows you can use windows automated sheduler to schedule the Bat file to run whenever you want it to. 
